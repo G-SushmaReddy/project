@@ -1,0 +1,2949 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+.navbar {
+  background-color: #000;
+  
+  
+  padding: 10px 0;
+}
+.nav-list li{
+  padding-right: 10px;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 10;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 7%;
+  margin-top: 4%;
+ 
+  font-family: "Inria Serif", serif;
+  font-size: 25px;
+  flex-wrap: wrap;
+}
+
+
+.nav-item {
+  margin: 0 20px;
+}
+.nav-item2{
+  font-size: 25px;
+  text-decoration: none;
+  margin: 0 px;
+  color: #D9C479;
+  margin-left:25px  ;
+  font-family: "Inria Serif", serif;
+ 
+ 
+ 
+
+}
+.nav-item1{
+  margin-left: 10px;
+  padding-right: 5px 10px;
+}
+
+.nav-item1 a{
+  font-size: 25px;
+  text-decoration: none;
+  margin: 0 px;
+  color: #D9C479;
+  margin-left:10px  ;
+  font-family: "Inria Serif", serif;
+
+  padding-right: 5px 10px;
+  
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #fff;
+  padding-right:  10px;
+  
+}
+.logo{
+  display: flex;
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  top: 8%;
+  left: 10%;
+ 
+}
+
+@media (max-width: 700px) {
+  .nav-list {
+    justify-content: center;
+    margin: 0;
+    
+  }
+
+  .nav-item, .nav-item1, .nav-item2 {
+    margin: 5px;
+    font-size: 25px;
+  }
+
+  .logo {
+    position: static;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+  }
+
+
+  
+}
+
+
+.home-container {
+  display: flex;
+  background-color: black;
+  color: white;
+
+  justify-content: space-between;
+  align-items: center; /* changed from 'right' because 'right' is not a valid value for align-items. */
+
+
+
+  
+}
+
+
+.home-container h1 {
+  margin-right: 5%;
+  font-family: 'Inknut Antigua', serif;
+  
+  font-size: 500%;
+  margin-top: -5%;
+  background: linear-gradient(180deg, #9E7336, #F5EC9A);
+  background-clip: text;
+  color: transparent;
+  background-position: center bottom 15%; /* Add some spacing to the right of the text */
+}
+
+.home-container img {
+  max-width: 31%;
+  height: auto;
+  margin-left: 10%; 
+  order: -1; 
+margin-top: 5%;
+margin-bottom: 7%;
+}
+.para{
+  font-size: 34px;
+  /* font-family: 'Inknut Antigua', serif; */
+  font-family: 'Imprint MT Shadow', serif;
+  text-align: justify;
+  margin-right: 10%;
+  margin-left: 7%;
+  letter-spacing: -0.03em;
+ 
+}
+
+.start::after {
+  content: ">";
+  margin-left: 60px;
+}
+.buttoncontainer button{
+  
+  position: absolute;
+width: 398px;
+height: 74px;
+left: 55%;
+top: 90%;
+
+background: linear-gradient(91.39deg, #E6D789 11.49%, #9C7034 82.34%);
+box-shadow: 0px 4px 4px #9C7034;
+border-radius: 30px;
+border: none;
+
+  
+}
+.start{
+  position: absolute;
+width: 203px;
+height: 77px;
+left: 70%;
+top: 92%;
+
+font-family: 'Inknut Antiqua';
+font-style: normal;
+font-weight: 800;
+font-size: 30px;
+line-height: 77px;
+
+color: #000000;
+transition: background-color 0.3s ease;
+
+  }
+.start:hover{
+  background: linear-gradient(180deg, #9E7336 0%, #F5EC9A 100%);
+}
+input[type="number"]
+{
+  font-size: 20px;
+}
+
+
+
+.shapes-container {
+  position: absolute;
+  width: 1150.73px;
+  height: 1158.4px;
+  left: -400px;
+  top: -470px;
+  transform: scale(0.8);
+}
+
+
+
+.rectangle-1 {
+  position: absolute;
+left: 28.33%;
+right: 23.64%;
+top: 35.92%;
+bottom: 59.16%;
+
+background: linear-gradient(180deg, rgba(223, 206, 129, 0.2) 0%, rgba(156, 112, 52, 0.2) 100%);
+border-radius: 30px;
+transform: rotate(-36.67deg);
+
+}
+
+.rectangle-2 {
+  position: absolute;
+left: 23.38%;
+right: -15.22%;
+top: 82.64%;
+bottom: 12.44%;
+
+background: linear-gradient(180deg, rgba(222, 205, 129, 0.3) 0%, rgba(156, 117, 54, 0.3) 100%);
+border-radius: 30px;
+transform: rotate(-36.67deg);
+}
+
+.rectangle-3 {
+  position: absolute;
+left: 37.11%;
+right: -6.41%;
+top: 57.61%;
+bottom: 37.47%;
+
+background: linear-gradient(180deg, rgba(222, 205, 129, 0.2) 0%, rgba(156, 117, 54, 0.2) 100%);
+border-radius: 30px;
+transform: rotate(-36.67deg);
+
+}
+
+.rectangle-4{
+  position: absolute;
+left: 17.47%;
+right: 23.62%;
+top: 58.18%;
+bottom: 36.9%;
+
+background: linear-gradient(180deg, rgba(222, 205, 129, 0.3) 0%, rgba(156, 117, 54, 0.3) 100%);
+border-radius: 30px;
+transform: rotate(-36.67deg);
+}
+
+.rectangle-5{
+  position: absolute;
+left: 30.42%;
+right: 5%;
+top: 77%;
+bottom: 18.78%;
+width: 70%;
+
+background: linear-gradient(180deg, rgba(222, 205, 129, 0.15) 0%, rgba(156, 117, 54, 0.15) 100%);
+border-radius: 30px;
+transform: rotate(-36.67deg);
+
+}
+.rectangle-6{
+  position: absolute;
+left: 0%;
+right: 41.09%;
+top: 79.41%;
+bottom: 18%;
+
+background: linear-gradient(180deg, rgba(222, 205, 129, 0.1) 0%, rgba(156, 117, 54, 0.1) 100%);
+border-radius: 30px;
+transform: rotate(-36.67deg);
+
+}
+.rectangle-7{
+  position: absolute;
+left: 40.93%;
+right: 0.16%;
+top: 34.95%;
+bottom: 62.46%;
+
+background: linear-gradient(180deg, rgba(222, 205, 129, 0.2) 0%, rgba(156, 117, 54, 0.2) 100%);
+border-radius: 30px;
+transform: rotate(-36.67deg);
+
+
+}
+.rectangle-8{
+  position: absolute;
+left: 20%;
+width: 90%;
+right: 13.92%;
+top: 97.92%;
+bottom: -1%;
+
+background: linear-gradient(180deg, rgba(222, 205, 129, 0.2) 0%, rgba(156, 117, 54, 0.2) 100%);
+border-radius: 30px;
+transform: rotate(-36.67deg);
+}
+
+.benefitRectangle {
+  display: flex;
+  
+  background-color: #D9D9D9;
+  color: white;
+  padding: 20px;
+  /* This is to center the text content inside the rectangle */
+}
+
+.benefitRectangle img {
+  max-width: 25%;
+  height: auto;
+ 
+  order: -1; 
+margin-top: 16%;
+margin-bottom: 16%;
+margin-left: 75%;
+}
+
+.benefitsText {
+  
+  font-family: 'Inknut Antigua';
+  /* margin-left: -90%; */
+  /* font-size: 500%; */
+  /* margin-top: 4%; */
+  /* background: linear-gradient(180deg, #9E7336, #F5EC9A); */
+  background-clip: text;
+  /* color: transparent; */
+  position: absolute;
+    width: 10%;
+    height: 20%;
+    left: 10%;
+    top: 110%;
+   
+    font-style: normal;
+    font-weight: 400;
+    font-size: 540%;
+    line-height: 221%;
+    color: #000000;
+  
+} 
+
+.benefit-text {
+  position: absolute;
+  width: 836px;
+  height: 80px;
+  left: 179px;
+  font-family: 'Imprint MT Shadow', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 40px;
+  color: #000000;
+  text-align: left;
+}
+
+.ellipse {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 144px;
+  border-radius: 10px;
+  background: #000000;
+}
+
+.group-229 {
+  position: relative;
+width: 1405.6px;
+height: 647.32px;
+left: 363px;
+top: 0px;
+
+}
+
+
+
+/* RectangleImage.css */
+.imageW {
+  position: absolute;
+  width: 100%;
+  height: 85%;
+  left: 0px;
+  filter: brightness(0.7);
+ 
+  
+}
+
+.WhoNeedIt{
+  position: absolute;
+width: 700px;
+height: 172.13px;
+left: 650px;
+top: 1567.95px;
+word-spacing: 5px;
+font-family: 'Inknut Antiqua', serif;
+font-style: normal;
+font-weight: 400;
+font-size: 75px;
+line-height: 181px;
+
+color: #FFFFFF;
+}
+
+.ellipse-1 {
+  box-sizing: border-box;
+  border-radius: 25px;
+  position: absolute;
+  width: 50px;
+  height: 47.55px;
+  left: 600px;
+  top: 1755.26px;
+  border: 2px solid #F2F2F2;
+}
+.ellipse-2 {
+  box-sizing: border-box;
+  border-radius: 25px;
+position: absolute;
+width: 50px;
+height: 47.55px;
+left: 600px;
+top: 1830.39px;
+
+border: 2px solid #F2F2F2;
+}
+.ellipse-3{
+  border-radius: 25px;
+  box-sizing: border-box;
+
+position: absolute;
+width: 50px;
+height: 47.55px;
+left: 600px;
+top: 1903.62px;
+
+border: 2px solid #F2F2F2;
+
+}
+
+.ellipse-4{
+  border-radius: 25px;
+  box-sizing: border-box;
+
+position: absolute;
+width: 50px;
+height: 47.55px;
+left: 600px;
+top: 1976.84px;
+
+border: 2px solid #F2F2F2;
+}
+
+/* 1 styles */
+.one {
+  position: absolute;
+  width: 15px;
+  height: 73.23px;
+  left: 618px;
+  top: 1740.05px;
+  font-family: 'Inknut Antiqua';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 77px;
+  color: #FFFFFF;
+}
+
+.two{
+  position: absolute;
+width: 18px;
+height: 73.23px;
+left: 618px;
+top: 1815.18px;
+
+font-family: 'Inknut Antiqua';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 77px;
+
+color: #FFFFFF;
+
+}
+
+.three{
+  position: absolute;
+width: 17px;
+height: 73.23px;
+left: 618px;
+top: 1885.55px;
+
+font-family: 'Inknut Antiqua';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 77px;
+
+color: #FFFFFF;
+
+
+}
+.four{
+position: absolute;
+width: 21px;
+height: 73.23px;
+left: 618px;
+top: 1957.82px;
+
+font-family: 'Inknut Antiqua';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 77px;
+
+color: #FFFFFF;
+
+}
+
+.text1{
+position: absolute;
+width: 650px;
+height: 73.23px;
+left: 620px;
+top: 1741.95px;
+word-spacing: 3px;
+letter-spacing: 0.5px;
+
+font-family: 'Inknut Antiqua';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 77px;
+
+color: #FFFFFF;
+
+
+}
+.text2{
+
+position: absolute;
+width: 750px;
+height: 73.23px;
+left: 650px;
+top: 1815.18px;
+letter-spacing: 0.5px;
+word-spacing: 3px;
+
+font-family: 'Inknut Antiqua';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 77px;
+
+color: #FFFFFF;
+
+
+}
+
+.text3{
+  
+position: absolute;
+width: 750px;
+height: 73.23px;
+left: 580px;
+top: 1888.4px;
+letter-spacing: 0.5px;
+word-spacing: 3px;
+
+font-family: 'Inknut Antiqua';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 77px;
+
+color: #FFFFFF;
+
+
+}
+
+.text4{
+  /* Local Charities and Nonprofits. */
+
+position: absolute;
+width: 750px;
+height: 73.23px;
+left: 565px;
+top: 1963.53px;
+letter-spacing: 0.5px;
+word-spacing: 3px;
+
+font-family: 'Inknut Antiqua';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 77px;
+
+color: #FFFFFF;
+
+
+}
+.RectBar1{
+  /* Rectangle 20 */
+
+position: absolute;
+width: 100%;
+height: 77px;
+left: 0px;
+top: 2130px;
+
+background: linear-gradient(90deg, #070707 7.81%, #9C7536 95.94%);
+
+}
+
+.RectHomeEnd{
+
+position: absolute;
+width: 1440px;
+height: 486px;
+left: 0px;
+top: 2207px;
+
+background: #FFFFFF;
+
+}
+.GetToKnow{
+
+position: absolute;
+width: 164px;
+height: 30px;
+left: 169px;
+top: 60px;
+
+font-family: 'Inria Sans', serif;
+font-style: normal;
+font-weight: 550;
+font-size: 25px;
+line-height: 30px;
+/* identical to box height */
+
+color: #080707;
+
+
+
+}
+.AboutUs{
+
+position: absolute;
+width: 83px;
+height: 26px;
+left: 169px;
+top: 110px;
+cursor: pointer;
+
+font-family: 'Inria Sans';
+font-style: normal;
+font-weight: 300;
+font-size: 22px;
+line-height: 26px;
+
+color: #080707;
+
+
+}
+.OurTeam{
+  
+
+position: absolute;
+width: 90px;
+height: 26px;
+left: 169px;
+top: 150px;
+cursor: pointer;
+
+font-family: 'Inria Sans';
+font-style: normal;
+font-weight: 300;
+font-size: 22px;
+line-height: 26px;
+
+color: #080707;
+
+
+
+}
+
+.Partners{
+
+
+
+position: absolute;
+width: 79px;
+height: 26px;
+left: 169px;
+top: 190px;
+cursor: pointer;
+
+font-family: 'Inria Sans';
+font-style: normal;
+font-weight: 300;
+font-size: 22px;
+line-height: 26px;
+
+color: #080707;
+
+
+
+}
+
+.Terms{
+
+position: absolute;
+width: 180px;
+height: 26px;
+left: 169px;
+top: 230px;
+cursor: pointer;
+
+font-family: 'Inria Sans';
+font-style: normal;
+font-weight: 300;
+font-size: 22px;
+line-height: 26px;
+
+color: #080707;
+
+
+
+}
+.Contact{
+  
+
+position: absolute;
+width: 225px;
+height: 30px;
+left: 415px;
+top: 60px;
+cursor: pointer;
+
+font-family: 'Inria Sans';
+font-style: normal;
+font-weight: 550;
+font-size: 25px;
+line-height: 30px;
+/* identical to box height */
+
+color: #080707;
+
+
+}
+
+.ConInfo{
+
+
+position: absolute;
+width: 197px;
+height: 182px;
+left: 415px;
+top: 100px;
+margin: 5px 0;
+cursor: pointer;
+
+font-family: 'Inria Sans';
+font-style: normal;
+font-weight: 300;
+font-size: 22px;
+
+
+color: #080707;
+
+
+}
+.ConInfo .p1{
+  margin: 5px 0;
+}
+
+.fb{
+ 
+position: absolute;
+left: 65.28%;
+right: 31.25%;
+top: 15%;
+bottom: 11.53%;
+height: 15%;
+
+transition: background-color 0.3s ease; 
+
+}
+.fb:hover{
+  transform: scale(1.1); 
+  filter: brightness(1.1); 
+  cursor: pointer;
+}
+.insta{
+
+
+position: absolute;
+left: 72.28%;
+right: 41.25%;
+top: 25%;
+height: 13%;
+
+transition: background-color 0.3s ease; 
+}
+.insta:hover{
+  transform: scale(1.1); 
+  filter: brightness(1.1); 
+  cursor: pointer;
+}
+.twit{
+  position: absolute;
+  left: 77.28%;
+  right: 31.25%;
+  top: 17%;
+  bottom: 11.53%;
+  height: 11%;
+  transition: background-color 0.3s ease; 
+
+}
+.twit:hover{
+  transform: scale(1.1); 
+  filter: brightness(1.1); 
+  cursor: pointer;
+}
+.UTube{
+  position: absolute;
+left: 85.28%;
+right: 41.25%;
+top: 25%;
+height: 13%;
+transition: background-color 0.3s ease; 
+
+}
+.UTube:hover{
+  transform: scale(1.1); 
+  filter: brightness(1.1); 
+  cursor: pointer;
+}
+.Link{
+  position: absolute;
+  left: 90.28%;
+  right: 31.25%;
+  top: 17%;
+  bottom: 11.53%;
+  height: 11%;
+  transition: background-color 0.3s ease; 
+
+
+}
+#rectb{
+  position:absolute;
+  top: 400px;
+ 
+height: 800px;
+
+  
+  /* z-index: 1; */
+  
+  right: 0px;
+  
+}
+.Link:hover{
+  transform: scale(1.1); 
+  filter: brightness(1.1); 
+  cursor: pointer;
+}
+
+.RecEnd{
+ 
+position: absolute;
+width: 1473px;
+height: 105px;
+left: 0px;
+top: 381px;
+
+background: #000000;
+
+
+}
+.CR{
+
+
+position: absolute;
+left: 81.11%;
+right: 17.5%;
+top: 65%;
+height: 5%;
+background: transparent;
+
+
+}
+.p2{
+ 
+position: absolute;
+left: 83.12%;
+right: 8.54%;
+top: 61%;
+
+
+font-family: 'Inria Sans', serif;
+font-style: normal;
+font-weight: 300;
+font-size: 20px;
+
+
+color: #080707;
+
+
+}
+.p3{
+ 
+  position: absolute;
+  left: 81.12%;
+  right: 8.54%;
+  top: 68%;
+  width: 14%;
+  
+  
+  font-family: 'Inria Sans', serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  
+  
+  color: #080707;
+  
+  
+  }
+
+  .logoEnd{
+  
+    /* Color logo - no background 3 */
+
+position: absolute;
+width: 95.71px;
+height: 100px;
+left: 10%;
+top: 79%;
+
+
+  }
+
+  .RectNew{
+    background: #000000;
+    height: 1100px;
+    width: auto;
+    top: 0px;
+    margin-top: 0px;
+  }
+  #rectnew1{
+    height: 1300px;
+  }
+
+  .SignInBox{
+    /* Rectangle 23 */
+
+position: absolute;
+width: 804px;
+height: 784px;
+left: 330px;
+top: 183px;
+align-content: center;
+
+background: #FFFFFF;
+border-radius: 30px;
+z-index: 1;
+
+  }
+  .imgSign{
+    /* Color logo - no background 4 */
+
+position: absolute;
+width: 450px;
+height: 145.53px;
+left: 477px;
+top: 15px;
+
+
+  }
+
+  .RectButton{
+    /* Rectangle 27 */
+
+position: absolute;
+width: 402px;
+
+left: 0px;
+top: 0x;
+
+background: #EEEEF0;
+box-shadow: inset 7px 6px 4px rgba(0, 0, 0, 0.13);
+border-radius: 30px 0px 0px 0px;
+cursor: pointer;
+
+
+height: 105.23px;
+
+font-family: 'Inknut Antiqua';
+font-style: normal;
+font-weight: 400;
+font-size: 34px;
+line-height: 88px;
+
+
+color: #000000;
+}
+.RectButton1{
+  /* Rectangle 27 */
+
+position: absolute;
+width: 402px;
+height: 105.23px;
+right: 0;
+top: 0;
+
+background: #EEEEF0;
+box-shadow: inset 7px 6px 4px rgba(0, 0, 0, 0.13);
+border-radius: 0px 30px 0px 0px;
+
+font-family: 'Inknut Antiqua';
+font-style: normal;
+font-weight: 400;
+font-size: 34px;
+line-height: 88px;
+
+color: #000000;
+
+
+}
+  .Signin{
+
+position: absolute;
+width: 132px;
+height: 105.23px;
+left: 66%;
+top: 0.5%;
+
+
+font-family: 'Inknut Antiqua';
+font-style: normal;
+font-weight: 400;
+font-size: 34px;
+line-height: 88px;
+z-index: 1;
+
+color: #000000;
+
+
+  }
+  .SignUp1{
+    /* Sign up */
+
+position: absolute;
+
+height: 103.18px;
+left: 15%;
+top: 1%;
+
+font-family: 'Inknut Antiqua';
+font-style: normal;
+font-weight: 400;
+font-size: 34px;
+line-height: 88px;
+
+color: #000000;
+
+
+
+  }
+  .username{
+    /* Rectangle 28 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 718px;
+height: 56px;
+left: 5%;
+top: 22%;
+font-size: 22px;
+
+
+background: #FFFFFF;
+border: 0.5px solid #DAC8C8;
+box-shadow: inset 3px 4px 4px rgba(0, 0, 0, 0.25);
+
+
+  }
+  .FirstName{
+    box-sizing: border-box;
+
+position: absolute;
+width: 718px;
+height: 56px;
+left: 5%;
+top: 18%;
+font-size: 22px;
+
+
+background: #FFFFFF;
+border: 0.5px solid #DAC8C8;
+box-shadow: inset 3px 4px 4px rgba(0, 0, 0, 0.25);
+
+
+  }
+  .LastName{
+    box-sizing: border-box;
+
+position: absolute;
+width: 718px;
+height: 56px;
+left: 5%;
+top: 27%;
+
+background: #FFFFFF;
+border: 0.5px solid #DAC8C8;
+box-shadow: inset 3px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .Gmail{
+box-sizing: border-box;
+
+position: absolute;
+width: 718px;
+height: 56px;
+left: 5%;
+top: 36%;
+
+background: #FFFFFF;
+border: 0.5px solid #DAC8C8;
+box-shadow: inset 3px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .username1{
+    box-sizing: border-box;
+
+position: absolute;
+width: 718px;
+height: 56px;
+left: 5%;
+top: 45%;
+
+background: #FFFFFF;
+border: 0.5px solid #DAC8C8;
+box-shadow: inset 3px 4px 4px rgba(0, 0, 0, 0.25);
+
+  }
+  .password1{
+    box-sizing: border-box;
+
+position: absolute;
+width: 718px;
+height: 56px;
+left: 5%;
+top: 54%;
+
+background: #FFFFFF;
+border: 0.5px solid #DAC8C8;
+box-shadow: inset 3px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .password{
+    /* Rectangle 29 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 718px;
+height: 56px;
+left: 5%;
+top: 33%;
+
+background: #FFFFFF;
+border: 0.5px solid #DAC8C8;
+box-shadow: inset 3px 4px 4px rgba(0, 0, 0, 0.25);
+
+
+  }
+  input[type="text"]::placeholder,
+  input[type="password"]::placeholder,
+  input[type="email"]::placeholder
+  {
+    /* User Name */
+left: 20px;
+font-family: 'Inknut Antiqua';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 57px;
+
+color: #9E9AA3;
+
+  }
+  .SignUpBox{
+    /* Rectangle 23 */
+
+position: absolute;
+width: 804px;
+height: 1000px;
+left: 330px;
+top: 183px;
+align-content: center;
+
+background: #FFFFFF;
+border-radius: 30px;
+z-index: 1;
+
+  }
+  @font-face {
+    font-family: 'Inknut Antiqua';
+    src: url('./Images/InknutAntiqua-Regular.ttf') format('truetype');
+    
+}
+  .Remember{
+
+
+width: 20px;
+height: 20px;
+
+left:1%;
+
+top: 43%;
+
+  }
+  .termsCon{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 61%;
+    left: 6%;
+
+  }
+  .Termcon{
+    position: absolute;
+   
+    top: 58.3%;
+    left: 10%;
+
+
+    font-family: 'Inknut Antiqua';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 46px;
+
+    color: #0F0F10;
+
+  }
+  .sty{
+    color: #9C7536;
+  }
+  .Remember-label{
+    /* Remember me */
+
+position: absolute;
+width: 200px;
+left: 5%;
+top: 42%;
+
+
+font-family: 'Inknut Antiqua';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 52px;
+
+color: #9C7536;
+
+
+  }
+  .Forgot{
+    /* Forgot password? */
+
+position: absolute;
+width: 200px;
+height: 52px;
+left: 70%;
+top: 42%;
+cursor: pointer;
+font-family: 'Inknut Antiqua';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 52px;
+/* identical to box height */
+
+color: #9C7536;
+
+
+  }
+  #button1{
+position: absolute;
+width: 299px;
+height: 53px;
+left:33%;
+top: 52%;
+
+
+background: linear-gradient(180deg, #F5EC9A 0%, #9E7336 100%);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 30px;
+border-style: none;
+
+
+font-family: 'Inknut Antiqua';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+padding: 0px 0px 0px 0px;
+cursor: pointer;
+color: #000000;
+
+transition: background-color 0.3s ease;
+
+  }
+#button1:hover{
+  background: linear-gradient(180deg, #9E7336 0%, #F5EC9A 100%);
+}
+#button2{
+  position: absolute;
+  width: 299px;
+  height: 53px;
+  left:33%;
+  top: 67%;
+  
+  
+  background: linear-gradient(180deg, #F5EC9A 0%, #9E7336 100%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  border-style: none;
+  
+  
+  font-family: 'Inknut Antiqua';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  padding: 0px 0px 0px 0px;
+  cursor: pointer;
+  color: #000000;
+  
+  transition: background-color 0.3s ease;
+  
+    }
+  #button2:hover{
+    background: linear-gradient(180deg, #9E7336 0%, #F5EC9A 100%);
+  }
+.smallhead{
+  /* or connect with */
+
+position: absolute;
+width: 155px;
+height: 52.1px;
+left: 41%;
+top: 66%;
+
+font-family: 'Inknut Antiqua';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 46px;
+
+color: #9E9AA3;
+
+
+}
+#sm{
+  top: 75%;
+}
+#hll{
+  top: 77.5%;
+}
+#hlr{
+  top: 77.5%;
+}
+
+.horizontal-line {
+  width: 30%;
+  height: 1px;
+  background: #000; /* Set your desired line color */
+  position: absolute;
+  top: 69%;
+  transform: translateY(-50%);
+}
+
+.left {
+  left: 40px;
+  right: 250px;
+}
+
+.right {
+  right: 40px;
+}
+.fb1{
+  /* Vector */
+height: 20%;
+position: absolute;
+left: 8%;
+
+bottom: 8%;
+transition: background-color 0.3s ease;
+
+}
+#fbb{
+  bottom: 5%;
+  height: 15%;
+
+}
+#goo{
+  bottom: 5%;
+  height: 15%;
+
+
+}
+#lin{
+  bottom: 7%;
+  height: 10%;
+
+}
+.linkedi{
+  height: 14%;
+position: absolute;
+right: 6%;
+
+bottom: 11%;
+transition: background-color 0.3s ease;
+
+
+}
+.google{
+  /* devicon:google */
+
+position: absolute;
+
+height:22%;
+left: 40%;
+bottom: 7%;
+transition: background-color 0.3s ease;
+
+}
+.linkedi:hover{
+  transform: scale(1.1); 
+    filter: brightness(1.1);
+    cursor: pointer; 
+
+}
+ .google:hover{
+  transform: scale(1.1); 
+  filter: brightness(1.1);
+  cursor: pointer; 
+
+}
+.fb1:hover{
+  transform: scale(1.1); 
+  filter: brightness(1.1); 
+  cursor: pointer;
+
+}
+.link1{
+  text-decoration: none;
+  color: #000000;
+}
+#linkreq{
+  color:#959595;
+}
+
+/*mainwindow*/
+
+.Recthead{
+ 
+/* position: absolute; */
+height: 101px;
+left: 0px;
+/* top: 0px; */
+right: 0px;
+width: auto;
+
+background: #000000;
+
+}
+.imgHead{
+
+position: absolute;
+width: 200px;
+height: 64.68px;
+left: 45px;
+top: 18px;
+
+
+}
+
+.search-input{
+  position: absolute;
+width: 394px;
+height: 42px;
+left: 827px;
+top: 29px;
+
+background: rgba(156, 117, 54, 0.5);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 30px;
+border: transparent;
+
+  padding-left: 55px;
+  font-size: 20px;
+}
+
+.search{
+  position: absolute;
+  height: 40px;
+  left: 840px;
+  top: 30px;
+}
+.Logout{
+position: absolute;
+width: 149px;
+height: 46px;
+left: 1296px;
+top: 29px;
+
+background: rgba(76, 72, 72, 0.5);
+border-radius: 30px;
+transition: background-color 0.3s ease;
+
+}
+.txtlogout{
+  /* Log Out */
+
+position: absolute;
+
+height: 46px;
+left: 57px;
+top: 1px;
+
+font-family: 'Inknut Antiqua';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 46px;
+
+color: #9C7536;
+cursor: pointer;
+
+
+}
+.logoutimg{
+  position: absolute;
+  height: 30px;
+  left: 20px;
+  top: 8px;
+  
+  
+}
+.Logout:hover{
+background: linear-gradient(180deg, #9E7336 0%, #F5EC9A 100%);
+}
+.img1{
+
+position: absolute;
+width: 100%;
+height: 100%;
+left: 0px;
+top: 100px;
+opacity: 0.7;
+
+border-radius: 0px;
+
+}
+.midrect{
+
+
+position: absolute;
+width: 100%;
+height: 93px;
+left: 0px;
+top: 842px;
+
+/* background: rgba(165, 167, 200, 0.6); */
+
+}
+.img2{
+
+
+position: absolute;
+width: 100%;
+height: 100%;
+left: 0px;
+top: 935px;
+opacity: 0.7;
+
+}
+.menu{
+  /* Rectangle 36 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 1400px;
+height: 104px;
+left: 37px;
+top: 130px;
+
+background: #FFFFFF;
+border: 1px solid #DBD9D9;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 30px;
+
+}
+.option1{
+
+
+position: absolute;
+width: 171px;
+height: 52px;
+left: 159px;
+top: 25px;
+
+font-family: 'Inknut Antiqua';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 52px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+
+}
+.option2{
+  /* Food posting form */
+
+position: absolute;
+width: 229.15px;
+height: 46px;
+left: 432px;
+top: 25px;
+cursor: pointer;
+
+font-family: 'Inknut Antiqua';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 46px;
+
+color: #959595;
+transition: background-color 0.3s ease;
+  
+}
+.option2:hover{
+color:darkgrey
+}
+.option3{
+  /* Food request form */
+
+position: absolute;
+width: 229.15px;
+height: 46px;
+left: 652px;
+top: 25px;
+cursor: pointer;
+
+font-family: 'Inknut Antiqua';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 46px;
+
+color: #959595;
+transition: background-color 0.3s ease;
+  
+}
+.option3:hover{
+color:darkgray;
+}
+.option4{
+  /* Community form/ feed */
+
+position: absolute;
+width: 267px;
+height: 46px;
+left: 893px;
+top: 25px;
+cursor: pointer;
+
+font-family: 'Inknut Antiqua';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 46px;
+
+color: #959595;
+transition: background-color 0.3s ease;
+  
+}
+.option4:hover{
+color:darkgray;
+}
+.option5{
+  /* Notification */
+
+position: absolute;
+width: 129px;
+height: 46px;
+left: 1172px;
+top: 25px;
+cursor: pointer;
+
+font-family: 'Inknut Antiqua';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 46px;
+
+color: #959595;
+transition: background-color 0.3s ease;
+  
+}
+.option5:hover{
+color:darkgray;
+}
+.ellipseMain{
+  /* Ellipse 8 */
+
+position: absolute;
+width: 73px;
+height: 72px;
+left: 64px;
+top: 15px;
+border-radius: 40px;
+cursor: pointer;
+background: #D9D9D9;
+border: 2px solid #9C7536;
+
+}
+.edit{
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 255px;
+top: 22px;
+cursor: pointer;
+}
+.Posting{
+
+box-sizing: border-box;
+
+position: absolute;
+width: 1080px;
+height: 263px;
+left: 347px;
+top: 273px;
+
+background: #FFFFFF;
+border: 1px solid #E7E7E7;
+box-shadow: 2px 4px 7px 1px rgba(0, 0, 0, 0.25);
+
+}
+.upload{
+ 
+position: absolute;
+width: 25.82px;
+height: 24px;
+left: 15px;
+top:10px;
+
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+}
+.photo{
+  /* Photo | */
+
+position: absolute;
+width: 51.64px;
+height: 31px;
+left: 40px;
+top:10px;
+
+font-family: 'Inknut Antiqua';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 31px;
+/* identical to box height */
+
+color: #959595;
+
+
+}
+#video{
+  left: 100px;
+}
+#VideoUp{
+  left: 130px;
+}
+#hori{
+  left: 20px;
+  right: 20px;
+  width: 1030px;
+  top: 45px;
+  color: #959595;
+}
+#textx{
+  top: 100px;
+  left: 1px;
+  width: 230px;
+
+  /* What’s on your mind? */
+
+position: absolute;
+
+height: 46px;
+
+
+font-family: 'Inknut Antiqua';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 46px;
+
+color: #959595;
+
+
+}
+#hori1{
+  left: 20px;
+  right: 20px;
+  width: 1030px;
+  top: 190px;
+  color: #aba8a8;
+}
+.buttonPost{
+  /* Rectangle 35 */
+
+position: absolute;
+width: 98.98px;
+height: 39px;
+left: 928.22px;
+top: 205px;
+border: transparent;
+
+background: linear-gradient(180deg, #D9D9D9 0%, #9C7536 0.01%, #DECD81 100%);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+
+font-family: 'Inknut Antiqua';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 46px;
+
+color: #000000;
+transition: background-color 0.3s ease;
+  
+}
+.buttonPost:hover{
+background: linear-gradient(180deg, #DECD81 0%, #9E7336 100%);
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.sidebutton{
+  /* Rectangle 39 */
+
+position: absolute;
+width: 245px;
+height: 59px;
+left: 0px;
+top: 294px;
+border: transparent;
+background: #D9D9D9;
+cursor: pointer;
+
+border-radius: 0px 30px 0px 0px;
+
+font-family: 'Inknut Antiqua';
+font-style: normal;
+
+font-weight: 400;
+font-size: 23px;
+line-height: 64px;
+
+color: #000000;
+transition: background-color 0.3s ease;
+
+}
+.sidebutton:hover{
+  background-color:#F2F2F2;
+}
+.postimage{
+  height: 30px;
+  left: 5px;
+}
+#Friend{
+/* Rectangle 39 */
+
+position: absolute;
+width: 259px;
+height: 59px;
+left: -6px;
+top: 391px;
+border: transparent;
+
+background: #D9D9D9;
+border-radius: 0px 30px 0px 0px;
+
+}
+.friend{
+  left: 5px;
+}
+#Friend:hover{
+  background-color: #F2F2F2;
+}
+#chat{
+  /* Rectangle 39 */
+
+position: absolute;
+width: 210px;
+height: 59px;
+left: 0px;
+top: 485px;
+border: transparent;
+
+background: #D9D9D9;
+border-radius: 0px 30px 0px 0px;
+
+}
+#chat:hover{
+  background-color: #F2F2F2;
+}
+#privacy{
+  /* Rectangle 39 */
+
+position: absolute;
+width: 299px;
+height: 59px;
+left: 0px;
+top: 575px;
+border: transparent;
+
+background: #D9D9D9;
+border-radius: 0px 30px 0px 0px;
+
+}
+#privacy:hover{
+  background-color: #F2F2F2;
+}
+#help{
+  /* Rectangle 39 */
+
+position: absolute;
+width: 253px;
+height: 59px;
+left: 0px;
+top: 667px;
+border: transparent;
+
+background: #D9D9D9;
+border-radius: 0px 30px 0px 0px;
+
+}
+#help:hover{
+  background-color: #F2F2F2;
+}
+.chatimg{
+  height: 30px;
+  left: 5px;
+}
+.helpimg{
+  height: 30px;
+}
+
+.confirmation-dialog {
+  position: absolute;
+  top:400px;
+  left: 50%;
+ width: 600px;
+ height: 150px;
+  transform: translate(-50%, -50%);
+  background-color: rgb(29, 28, 28);
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  opacity: 0.6;
+  border-radius: 30px;
+}
+
+.message {
+  font-size: 20px;
+  color: #D9D9D9;
+  font-family: 'Inknut Antiqua';
+font-style: normal;
+font-weight: 400;
+
+  margin-bottom: 10px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+  padding: 5px 25px ;
+  background-color:#9C7034;
+  color: black;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: 'Inknut Antiqua';
+font-style: normal;
+
+}
+
+button:hover {
+  background-color:#F5EC9A;
+}
+.Postingtext{
+
+  box-sizing: border-box;
+  
+  position: absolute;
+  width: 1080px;
+  height: 146px;
+  left: 0px;
+  top: 45px;
+  
+  background: #FFFFFF;
+  border: 1px solid #E7E7E7;
+  border: transparent;
+
+
+  
+  }
+  #EllipseBig{
+
+position: absolute;
+width: 412px;
+height: 426px;
+left: 50px;
+top: 209px;
+border-radius: 426px;
+
+background: #D9D9D9;
+
+
+  }
+  .label1{
+    /* First Name: */
+
+position: absolute;
+width: 163px;
+height: 64px;
+left: 587px;
+top: 177px;
+
+font-family: 'Inknut Antiqua';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 64px;
+
+color: #000000;
+
+
+  }
+  .inputname{
+    /* Rectangle 46 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 280px;
+height: 51px;
+left: 0px;
+top: 75px;
+
+background: #FFFFFF;
+border: 1px solid #D6D6D6;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+
+  }
+  #lastlabel{
+    left: 1000px;
+  }
+  #DOB{
+    /* Date of Birth */
+
+position: absolute;
+width: 188px;
+top: 320px;
+}
+#Gender{
+  width: 104px;
+  top: 320px;
+  left: 1000px;
+
+}
+#Address{
+
+width: 123px;
+
+left: 590px;
+top: 471px;
+}
+#PhoneNo{
+
+width: 216px;
+
+left: 1000px;
+top: 471px;
+}
+#Best{
+
+width: 306px;
+
+left: 587px;
+top: 630px;
+}
+#Bestinput{
+  /* Rectangle 46 */
+
+box-sizing: border-box;
+
+width: 690px;
+
+top: 75px;
+}
+#Comp{
+  width: 226px;
+
+left: 587px;
+top: 790px;
+
+}
+#Compinput{
+  box-sizing: border-box;
+width: 690px;
+
+top: 75px;
+
+}
+#Loc{
+  width: 132px;
+
+left: 587px;
+
+
+top: 941px;
+}
+#Locinput{
+  box-sizing: border-box;
+width: 690px;
+
+top: 75px;
+
+}
+#profileSet{
+  
+  height:1300px;
+}
+#Descp{
+  /* Description: */
+
+position: absolute;
+width: 173px;
+height: 64px;
+left: 39px;
+top: 693px;
+
+}
+
+#Descpinput{
+box-sizing: border-box;
+
+position: absolute;
+width: 479px;
+height: 292px;
+
+top: 75px;
+
+
+}
+#buttonsave{
+  position: absolute;
+
+width: 322px;
+height: 63px;
+left: 590px;
+top: 1152px;
+
+background: linear-gradient(180deg, #9C7536 0%, #DECD81 100%);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 20px;
+
+font-family: 'Inknut Antiqua';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 57px;
+/* identical to box height */
+
+color: #000000;
+
+transition: background-color 0.3s ease;
+  
+}
+#buttonsave:hover{
+background: linear-gradient(180deg, #DECD81 0%, #9E7336 100%);
+}
+
+.para1{
+  position: absolute;
+}
+h4{
+  /* Hi !!! Welcome to Food Requesting form. */
+
+position: absolute;
+width: 890px;
+height: 103px;
+left: 275px;
+top: 90px;
+
+font-family: 'Inknut Antiqua';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 103px;
+
+color: #000000;
+
+
+}
+.p1x{
+  /* This form helps you to give the details on food request. Please fill the form with correct */
+
+position: absolute;
+width: 1268px;
+height: 64px;
+left: 98px;
+top: 235px;
+
+font-family: 'Inknut Antiqua';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 64px;
+
+color: #595353;
+
+
+}
+.p2x{
+  /* details. User the Organization ID that was given by Donaco. If you want to share this */
+
+position: absolute;
+width: 1268px;
+height: 64px;
+left: 98px;
+top: 285px;
+
+font-family: 'Inknut Antiqua';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 64px;
+
+color: #595353;
+}
+.p3x{
+  /* details to everyone click on the generate a link */
+
+position: absolute;
+width: 1268px;
+height: 64px;
+left: 98px;
+top: 335px;
+
+font-family: 'Inknut Antiqua';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 64px;
+
+color: #595353;
+
+}
+#hllF{
+top: 90px;
+width: 1300px;
+}
+#inputFname{
+  /* Rectangle 46 */
+
+box-sizing: border-box;
+
+width: 630px;
+height: 51px;
+left: 0px;
+top: 70px;
+
+background: #FFFFFF;
+border: 1px solid #D6D6D6;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+
+}
+#Fname{
+ 
+width: 163px;
+height: 64px;
+left: 68px;
+top: 486px;
+
+font-family: 'Inknut Antiqua';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 64px;
+
+color: #000000;
+
+
+
+}
+#Org{
+  /* Organization Name: */
+
+position: absolute;
+width: 277px;
+height: 64px;
+left: 68px;
+top: 644px;
+
+font-family: 'Inknut Antiqua';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 64px;
+
+color: #000000;
+
+
+}
+#inputOrgname{
+  /* Rectangle 46 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 630px;
+height: 51px;
+left: 0px;
+top: 70px;
+
+background: #FFFFFF;
+border: 1px solid #D6D6D6;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+
+}
+#OrgID{
+  /* Organization ID: */
+
+position: absolute;
+width: 231px;
+height: 64px;
+left: 68px;
+top: 802px;
+
+font-family: 'Inknut Antiqua';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 64px;
+
+color: #000000;
+
+
+
+}
+
+#inputOrgID{
+  /* Rectangle 46 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 630px;
+height: 51px;
+left: 0px;
+top: 70px;
+
+background: #FFFFFF;
+border: 1px solid #D6D6D6;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+
+  
+}
+
+#NoOrg{
+  /* Number of people in the organization: */
+
+position: absolute;
+width: 526px;
+height: 64px;
+left: 68px;
+top: 960px;
+
+font-family: 'Inknut Antiqua';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 64px;
+
+color: #000000;
+
+
+
+}
+#inputNoOrg{
+  /* Rectangle 46 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 630px;
+height: 51px;
+left: 0px;
+top: 70px;
+
+background: #FFFFFF;
+border: 1px solid #D6D6D6;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+
+
+}
+#Cat{
+  /* Category: */
+
+position: absolute;
+width: 133px;
+height: 64px;
+left: 68px;
+top: 1118px;
+
+font-family: 'Inknut Antiqua';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 64px;
+
+color: #000000;
+
+
+
+}
+#inputcat{
+  /* Rectangle 46 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 630px;
+height: 51px;
+left: 0px;
+top: 70px;
+
+background: #FFFFFF;
+border: 1px solid #D6D6D6;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+
+
+}
+#Ftype{
+  /* Food type(willingness): */
+
+position: absolute;
+width: 326px;
+height: 64px;
+left: 752px;
+top: 486px;
+
+font-family: 'Inknut Antiqua';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 64px;
+
+color: #000000;
+
+
+}
+#inputFtype{
+  /* Rectangle 46 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 630px;
+height: 51px;
+left: 0px;
+top: 70px;
+
+background: #FFFFFF;
+border: 1px solid #D6D6D6;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+
+}
+#Fsize{
+  /* Food Packet size: */
+
+position: absolute;
+width: 240px;
+height: 64px;
+left: 752px;
+top: 644px;
+
+font-family: 'Inknut Antiqua';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 64px;
+
+color: #000000;
+
+
+
+}
+#inputFsize{
+  /* Rectangle 46 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 630px;
+height: 51px;
+left: 0px;
+top: 70px;
+
+background: #FFFFFF;
+border: 1px solid #D6D6D6;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+
+
+}
+#Locat{
+  /* Location: */
+
+position: absolute;
+width: 132px;
+height: 64px;
+left: 752px;
+top: 802px;
+
+font-family: 'Inknut Antiqua';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 64px;
+
+color: #000000;
+
+
+
+}
+#inputLoct{
+  /* Rectangle 46 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 630px;
+height: 51px;
+left: 0px;
+top: 70px;
+
+background: #FFFFFF;
+border: 1px solid #D6D6D6;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+
+
+}
+#NoC{
+  /* Contact Number: */
+
+position: absolute;
+width: 237px;
+height: 64px;
+left: 752px;
+top: 960px;
+
+font-family: 'Inknut Antiqua';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 64px;
+
+color: #000000;
+
+
+}
+.ppp{
+  /* Hi !!! Welcome to Food Requesting form. */
+
+position: absolute;
+width: 890px;
+height: 103px;
+left: 275px;
+top: 121px;
+
+font-family: 'Inknut Antiqua';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 103px;
+
+color: #000000;
+
+
+
+}
+#inputNoC{
+  /* Rectangle 46 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 630px;
+height: 51px;
+left: 0px;
+top: 70px;
+
+background: #FFFFFF;
+border: 1px solid #D6D6D6;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+
+}
+#check{
+  left: 752px;
+top: 1110px;
+}
+#Generate{
+  left: 792px;
+  top: 1070px;
+  /* Generate a link to show this details to others */
+
+position: absolute;
+width: 566px;
+height: 59px;
+
+font-family: 'Inknut Antiqua';
+font-style: normal;
+font-weight: 400;
+font-size: 23px;
+line-height: 59px;
+
+color: #000000;
+
+}
+.butt{
+ 
+position: absolute;
+width: 344px;
+height: 75px;
+left: 354px;
+top: 1328px;
+
+background: linear-gradient(180deg, #9C7536 0%, #DECD81 100%);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 20px;
+
+
+
+font-family: 'Inknut Antiqua';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 64px;
+
+color: #000000;
+
+
+
+}
+.butt1{
+  /* Rectangle 468 */
+
+position: absolute;
+width: 344px;
+height: 75px;
+left: 780px;
+top: 1328px;
+
+background: #EFEBEB;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 20px;
+
+font-family: 'Inknut Antiqua';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 64px;
+
+color: #000000;
+
+}
+
+input[type ="text"]
+{
+  font-size: 20px;
+}
+.PostBox {
+  position: absolute;
+  left: 350px;
+  top: 570px;
+  border: transparent;
+  
+  
+  cursor: pointer;
+
+  
+  
+  
+}
+
+.PostBox11{
+  position: absolute;
+  left: 40px;
+  top: 0px;
+  border: transparent;
+  
+  
+  cursor: pointer;
+
+}
+
+.posts-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+  max-width: 1080px; 
+  border: #070707;
+
+  
+ 
+}
+.posts-containers {
+  display: flex;
+  flex-wrap: wrap;
+ 
+  
+ 
+}
+
+.singlePost {
+  flex-basis: calc(46.33% - 20px); 
+  margin: 10px;
+  padding: 15px;
+  text-align: left;
+
+  top: 100px;
+  background-color: white;
+  box-shadow: 2px 4px 7px 1px rgba(0, 0, 0, 0.25);
+
+  border: 1px solid rgba(163, 156, 156, 0.4);
+  border-radius: 20px;
+  transition: background-color 2s ease;
+
+}
+.singlePost1 {
+  flex-basis: calc(46.33% - 20px); 
+  margin: 10px;
+  padding: 15px;
+  text-align: left;
+
+  top: 100px;
+  background-color: white;
+  box-shadow: 2px 4px 7px 1px rgba(0, 0, 0, 0.25);
+
+  border: 1px solid rgba(163, 156, 156, 0.4);
+  border-radius: 20px;
+  transition: background-color 2s ease;
+
+}
+
+
+.singlePost:hover{
+  transform: scale(1.02); 
+
+}
+
+#PostBox1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.currentUser{
+  /* position: absolute; */
+  /* width: 40px; */
+  height: 50px;
+  text-align: left;
+  margin-top: 20px;
+  /* margin-left: 50px; */
+  padding-top: 5px;
+  /* margin: 10px; */
+  border-radius: 20px;
+  
+  border: 1px solid rgba(163, 156, 156, 0.4);
+}
+.currentUser1{
+  /* position: absolute; */
+  width: 650px;
+  height: 50px;
+  /* margin: 10px; */
+  border-radius: 20px;
+  
+  border: 1px solid rgba(163, 156, 156, 0.4);
+}
+
+
+.custom-table {
+ 
+  width: 97%;
+  margin: 100px auto; 
+  border-collapse: separate;
+  border-spacing: 10px;
+  
+}
+
+
+
+.custom-table th, .custom-table td {
+  border: 1px solid #ccc; 
+  padding: 8px;
+  text-align: center; 
+  border-radius: 10px;
+  width: 150px;
+  
+}
+
+.custom-table thead th {
+  background-color: #f0f0f0; 
+}
+.custom-table th:nth-child(1), .custom-table td:nth-child(1) {
+  width: 200px;
+}
+
+.custom-table th:nth-child(2), .custom-table td:nth-child(2) {
+  width: 200px;
+}
+.custom-table th:nth-child(3), .custom-table td:nth-child(3) {
+  width: 120px;
+}
+.custom-table th:nth-child(6), .custom-table td:nth-child(6) {
+  width: 200px;
+}
+#editreq{
+  cursor: pointer;
+}
+
+.del2{
+  cursor: pointer;
+}
+
+.__main2 {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+
+  background-color: #fff;
+  /* min-height: 80vh; */
+  /* width: 100%; */
+  border-radius: 10px;
+  padding: 100px;
+  display: flex;
+  padding-left: 0;
+}
+
+
+
+
+
