@@ -6,12 +6,18 @@ import { useState } from 'react';
 import { useSelector } from 'react-redux';
 import { selectUser } from './slices/slices';
 
+
+
+
+
 function PostBox1({ posts }) {
   const maxItemsPerRow = 3; // Maximum items per row
   const user = useSelector(selectUser);
   const token = user.token;
+  const [showPopup, setShowPopup] = useState(false);
   
   // const [requestData, setRequestData] = useState([]);
+  
  
 
   async function deleteRequest(id){
@@ -31,6 +37,10 @@ function PostBox1({ posts }) {
 
     // fetchData();
   }
+
+
+
+
   return (
     <div className='PostBox11'>
       <div id='PostBox1' className='posts-containers'>
@@ -53,15 +63,16 @@ function PostBox1({ posts }) {
                 }
               }
               >
-                <p>{post.postedBy}</p>
+                <p style={{marginLeft:'10px', marginTop:'5px', fontWeight: 'bold'}}>{post.postedBy}</p>
                 <div>
                   <img
                     src={image}
                     id='editreq'
-                    alt='reqDelete'
+                    alt='edit'
                     style={{ height: '32px', width: '32px',
                     // marginLeft: '590px'
                    }}
+                   onClick={() => setShowPopup(true)} 
                   />
                    <img
                     src={image1}
@@ -95,6 +106,18 @@ function PostBox1({ posts }) {
           </div>
         ))}
       </div>
+      {showPopup && <div className="popup-background" onClick={() => setShowPopup(false)}></div>}
+
+{/* Popup window */}
+{showPopup && (
+  <div className="popup">
+    {/* Popup content */}
+    <div className="popup-content">
+      <p>This is a popup window.</p>
+      <button onClick={() => setShowPopup(false)}>Close</button>
+    </div>
+  </div>
+)}
     </div>
     
   );

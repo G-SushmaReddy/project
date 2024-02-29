@@ -1,9 +1,9 @@
 .main__chatbody {
     flex-grow: 1;
-    background-color: #f4f3f8;
-    border-radius: 10px;
+    background-image: linear-gradient(to bottom right, #9C7536, #000000 70%);    
     padding: 15px 20px;
     display: flex;
     /* width: 500px; */
     /* width: 100%; */
   }
+  

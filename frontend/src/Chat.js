@@ -10,7 +10,7 @@ import ChatBody from './chatBody/ChatBody';
 function Chat() {
     return (
         <div className="__main">
-     <div className='Recthead'>
+     <div className='Recthead1'>
             <img src={image} className='imgHead' alt='imgx'></img>
            
             <LogOut/>

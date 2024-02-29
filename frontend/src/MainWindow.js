@@ -8,6 +8,7 @@ import { useParams } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { selectUser } from './slices/slices';
 import axios from 'axios';
+import Rectangle from './Rectangle';
 
 function MainWindow()
 {
@@ -41,8 +42,11 @@ function MainWindow()
     setIsUpdate(!isUpdate);
   };
     return(
-        <div className='App'>
+        <div className='App' >
+          {/* <Rectangle /> */}
+          {/* <Rectangle/> */}
       <Header/>
+      
       <MenuBar/>
       <Posting onPost={handlePost} />
       <PostBox posts={posts} />

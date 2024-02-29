@@ -10,7 +10,7 @@ function PostBox({ posts }) {
       <div id='PostBox1' className='posts-container'>
         {posts.map((post, index) => (
           <div key={index} className='singlePost'>
-          <div className='currentUser'>{post.postedBy}<p>
+          <div className='currentUser'><p style={{marginLeft:'10px', marginTop:'5px', fontWeight: 'bold'}}>{post.postedBy}
       
             </p></div>
             <p>{post.content}</p>

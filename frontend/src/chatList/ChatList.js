@@ -14,7 +14,7 @@ export default class ChatList extends Component {
     },
     {
       image:
-        "https://pbs.twimg.com/profile_images/1055263632861343745/vIqzOHXj.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRZ6tM7Nj72bWjr_8IQ37Apr2lJup_pxX_uZA&usqp=CAU",
       id: 2,
       name: "Ayub Rossi",
       active: false,
@@ -95,7 +95,7 @@ export default class ChatList extends Component {
       <div className="main__chatlist">
         <button className="btn">
           <i className="fa fa-plus"></i>
-          <span>New conversation</span>
+          {/* <span >New conversation</span> */}
         </button>
         <div className="chatlist__heading">
           <h2>Chats</h2>
@@ -105,7 +105,7 @@ export default class ChatList extends Component {
         </div>
         <div className="chatList__search">
           <div className="search_wrap">
-            <input type="text" placeholder="Search Here" required />
+            <input type="text" placeholder="Search Here"  required />
             <button className="search-btn">
               <i className="fa fa-search"></i>
             </button>
