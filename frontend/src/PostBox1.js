@@ -3,8 +3,9 @@ import React from 'react';
 import image from './Images/editx.png';
 import image1 from './Images/delete.png';
 import { useState } from 'react';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import { selectUser } from './slices/slices';
+import Posting from './Posting';
 
 
 
@@ -15,6 +16,22 @@ function PostBox1({ posts }) {
   const user = useSelector(selectUser);
   const token = user.token;
   const [showPopup, setShowPopup] = useState(false);
+  const dispatch = useDispatch();
+    const [showConfirmation, setShowConfirmation] = useState(false);
+
+  const handleLogoutClick = () => {
+    setShowConfirmation(true);
+  };
+
+  const handleConfirmLogout = () => {
+    dispatch(PostBox1());
+    // Add your logout logic here
+    // For example, call an API to log the user out
+  };
+
+  const handleCancelLogout = () => {
+    setShowConfirmation(false);
+  };
   
   // const [requestData, setRequestData] = useState([]);
   
@@ -72,7 +89,7 @@ function PostBox1({ posts }) {
                     style={{ height: '32px', width: '32px',
                     // marginLeft: '590px'
                    }}
-                   onClick={() => setShowPopup(true)} 
+                   onClick={handleLogoutClick} 
                   />
                    <img
                     src={image1}
@@ -106,18 +123,29 @@ function PostBox1({ posts }) {
           </div>
         ))}
       </div>
-      {showPopup && <div className="popup-background" onClick={() => setShowPopup(false)}></div>}
+      {/* {showPopup && <div className="popup-background" onClick={() => setShowPopup(false)}></div>}
 
-{/* Popup window */}
 {showPopup && (
   <div className="popup">
-    {/* Popup content */}
+ 
     <div className="popup-content">
       <p>This is a popup window.</p>
       <button onClick={() => setShowPopup(false)}>Close</button>
     </div>
   </div>
-)}
+)} */}
+ {showConfirmation && (
+  
+        <div className='confirmation-dialog1'>
+         
+          {/* <div className='message'>Are you sure? Do you want to LogOut?</div> */}
+          {/* <div className='button-container'>
+            <button onClick={handleConfirmLogout}>Yes</button>
+            <button onClick={handleCancelLogout}>No</button>
+          </div> */}
+          <Posting />
+        </div>
+      )}
     </div>
     
   );

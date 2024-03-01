@@ -28,7 +28,16 @@ function Giftbox() {
   return (
     <div className='giftbox'>
       <img src={images[currentImageIndex]} alt="gift" style={{ width: '100%', height: '100%' }} />
+<div className='boxx'>
+
+</div>
+<div> <img src={images[currentImageIndex]} alt="gift" style={{ width: '100%', height: '100%' }} /></div>
+<div className='boxx1'>
+
+</div>
     </div>
+    
+
   );
 }
 

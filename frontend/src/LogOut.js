@@ -3,6 +3,7 @@ import logout1 from './Images/logoutpng.png';
 import { Link } from 'react-router-dom';
 import { logout } from './slices/slices';
 import { useDispatch } from 'react-redux';
+import Posting from './Posting';
 function LogOut()
 {
   const dispatch = useDispatch();
@@ -34,7 +35,9 @@ function LogOut()
       {showConfirmation && (
         <div className='confirmation-dialog'>
           <div className='message'>Are you sure? Do you want to LogOut?</div>
+         
           <div className='button-container'>
+     
             <button onClick={handleConfirmLogout}><Link className='link1' to="/">Yes</Link></button>
             <button onClick={handleCancelLogout}>No</button>
           </div>

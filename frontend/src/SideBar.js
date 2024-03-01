@@ -17,7 +17,7 @@ function SideBar()
             <button className='sidebutton' id='privacy'><img style={{cursor:'pointer'}} src={request} alt='privacy' className='privacyimg'></img> <Link className='link1' to="/requests">   Requests</Link></button>
             <button className='sidebutton' id='help'><img src={help} alt='help' className='helpimg'></img>    Help Center</button>
 
-         <Giftbox/>
+         {/* <Giftbox/> */}
         </div>
     )
 }

@@ -6,18 +6,20 @@ import img1 from './Images/img2.jpg';
 import img2 from './Images/img1.jpg';
 import Rectangle from './Rectangle';
 import SideBar from './SideBar';
+import Giftbox from './Giftbox';
 
 
 function Header()
 {
     return (
       <div>
-       
+           <Giftbox/>
         <div className='Recthead'>
             <img src={image} className='imgHead' alt='imgx'></img>
             <SearchBar/>
             <LogOut/>
         </div>
+    
 
         {/* <Rectangle/> */}
         

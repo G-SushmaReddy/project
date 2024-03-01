@@ -9,6 +9,7 @@ import { useSelector } from 'react-redux';
 import { selectUser } from './slices/slices';
 import axios from 'axios';
 import Rectangle from './Rectangle';
+import Giftbox from './Giftbox';
 
 function MainWindow()
 {
@@ -43,13 +44,17 @@ function MainWindow()
   };
     return(
         <div className='App' >
+         
           {/* <Rectangle /> */}
           {/* <Rectangle/> */}
       <Header/>
+    
       
       <MenuBar/>
+     
       <Posting onPost={handlePost} />
       <PostBox posts={posts} />
+      
     
         </div>
     );
