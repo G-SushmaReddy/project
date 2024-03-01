@@ -10,13 +10,13 @@ import { useEffect } from 'react';
 
 // import { use } from '../../backend/src/app';
 
-function Editposting({ onPost }) {
+function Editposting({ onPost,id }) {
   const user = useSelector(selectUser);
   const token = user.token;
 
 
-  const { id } = useParams();
-
+  // const { id } = useParams();
+  //url looks like this http://localhost:3000/editpost/60f3e3e3e3e3e3e3e3e3e3e3 whats the problem now
   // console.log(id);
 
   if (!token) {
@@ -24,9 +24,9 @@ function Editposting({ onPost }) {
   }
   const [postText, setPostText] = useState('');
   const [selectedImage, setSelectedImage] = useState(null);
-
-
-
+// what is that so many anydesk
+// cant rememer whose anydesk
+// good
   useEffect(() => {
     if (!token) {
       window.location.href = '/login';
@@ -71,7 +71,7 @@ function Editposting({ onPost }) {
           }
         });
 
-        if (response.status === 200) {
+        if (response.status === 201) {
           alert("Data updated successfully!");
           // Redirect or perform another action after updating the post.
         } else {
@@ -128,9 +128,9 @@ function Editposting({ onPost }) {
       <div className='photo'>Photo</div>
       <img src={video} alt='video' className='upload' id='video' />
       <div className='photo' id='VideoUp'>Video</div>
-      <div className="horizontal-line" id='hori'></div>
+      {/* <div className="horizontal-line" id='hori'></div> */}
       <input
-        type='text'
+        type='textarea'
         className='Postingtext'
         placeholder='What is on your mind?'
         value={postText}
@@ -141,13 +141,20 @@ function Editposting({ onPost }) {
         accept='image/*'
         onChange={handleImageChange}
       />
-      <div className="horizontal-line" id='hori1'></div>
+      {/* <div className="horizontal-line" id='hori1'></div> */}
       <div className="rectanglePost">
-        <button className="buttonPost" onClick={(e) => {
+        <button className="buttonPostq" onClick={(e) => {
           e.preventDefault();
           handlePostClick();
-        }}>Post</button>
+        }}>Save </button>
+
+
       </div>
+
+      
+
+
+
     </div>
   );
 }

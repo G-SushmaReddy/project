@@ -18,10 +18,11 @@ function PostBox1({ posts }) {
   const token = user.token;
   const [showPopup, setShowPopup] = useState(false);
   const dispatch = useDispatch();
-    const [showConfirmation, setShowConfirmation] = useState(false);
-
+  const [showConfirmation, setShowConfirmation] = useState(false);
+  const [postid, setPostid] = useState('');
   const handleLogoutClick = () => {
     setShowConfirmation(true);
+    // setPostid(postid);
   };
 
   const handleConfirmLogout = () => {
@@ -33,24 +34,24 @@ function PostBox1({ posts }) {
   const handleCancelLogout = () => {
     setShowConfirmation(false);
   };
-  
-  // const [requestData, setRequestData] = useState([]);
-  
- 
 
-  async function deleteRequest(id){
+  // const [requestData, setRequestData] = useState([]);
+
+
+
+  async function deleteRequest(id) {
 
     console.log(id)
-    const response = await fetch(`http://localhost:3001/api/post/${id}`,{
-      method:'DELETE',
+    const response = await fetch(`http://localhost:3001/api/post/${id}`, {
+      method: 'DELETE',
       headers: {
         'x-access-token': token
       }
     })
     const data = await response.json();
     window.location.reload();
-   
-    
+
+
     // console.log(data)
 
     // fetchData();
@@ -67,46 +68,53 @@ function PostBox1({ posts }) {
           <div key={index} className='singlePost1'>
             <div className='currentUser1'>
               <div
-              style={
-                {
-                  display: 'flex',
-                  justifyContent: 'space-between',
-                  alignItems: 'center',
-                  // paddingInline: '100px',
-                  // height: '100px',
-                  // width: '100px',
-                  // backgroundColor: 'lightgray',
-                  // borderRadius: '50%',
-                  // marginLeft: '550px'
+                style={
+                  {
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                    alignItems: 'center',
+                    // paddingInline: '100px',
+                    // height: '100px',
+                    // width: '100px',
+                    // backgroundColor: 'lightgray',
+                    // borderRadius: '50%',
+                    // marginLeft: '550px'
+                  }
                 }
-              }
               >
-                <p style={{marginLeft:'10px', marginTop:'5px', fontWeight: 'bold'}}>{post.postedBy}</p>
+                <p style={{ marginLeft: '10px', marginTop: '5px', fontWeight: 'bold' }}>{post.postedBy}</p>
                 <div>
                   <img
                     src={image}
                     id='editreq'
                     alt='edit'
-                    style={{ height: '32px', width: '32px',
-                    // marginLeft: '590px'
-                   }}
-                   onClick={handleLogoutClick} 
+                    style={{
+                      height: '32px', width: '32px',
+                      // marginLeft: '590px'
+                    }}
+                    onClick={
+                      () => {
+                        setPostid(post._id);
+                        handleLogoutClick();
+                      }
+                    }
                   />
-                   <img
+                  <img
                     src={image1}
                     id='editreq'
                     alt='reqDelete'
                     onClick={
                       () => {
                         //confirm
-                        if(window.confirm('Are you sure you want to delete this post?')){
+                        if (window.confirm('Are you sure you want to delete this post?')) {
                           deleteRequest(post._id)
+                        }
                       }
                     }
-                    }
-                    style={{ height: '32px', width: '32px',
-                    // marginLeft: '590px'
-                   }}
+                    style={{
+                      height: '32px', width: '32px',
+                      // marginLeft: '590px'
+                    }}
                   />
                 </div>
               </div>
@@ -118,10 +126,10 @@ function PostBox1({ posts }) {
                   src={"http://localhost:3001" + post.image}
                   alt='Selected Image'
                   className='selectedImage'
-                  
+
                 />
               )}
-            </div> 
+            </div>
           </div>
         ))}
       </div>
@@ -136,21 +144,27 @@ function PostBox1({ posts }) {
     </div>//revert it back to the logout
   </div>
 )} */}
- {showConfirmation && (
-  
+      {showConfirmation && (
+
         <div className='confirmation-dialog1'>
-         
-          <div className='message'>Are you sure? Do you want to LogOut?</div>
+
+          <div className='message'>Edit post</div>
           <div className='button-container'>
             {/* <button onClick={handleConfirmLogout}>Yes</button>
             <button onClick={handleCancelLogout}>No</button>  
-          */}  
-         <Editposting/>
+          */}
+            <Editposting
+              id={postid}
+              onPost={() => {
+                setShowConfirmation(false);
+                window.location.reload();
+              }}
+            />
           </div>
         </div>
       )}
     </div>
-    
+
   );
 }
 
