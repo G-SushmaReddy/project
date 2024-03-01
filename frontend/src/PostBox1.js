@@ -117,9 +117,10 @@ function PostBox1({ posts }) {
                   src={"http://localhost:3001" + post.image}
                   alt='Selected Image'
                   className='selectedImage'
+                  
                 />
               )}
-            </div>
+            </div> 
           </div>
         ))}
       </div>
