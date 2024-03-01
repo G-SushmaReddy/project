@@ -1,0 +1,156 @@
+.Postingnew{
+
+    box-sizing: border-box;
+    
+    position: absolute;
+    width: 180px;
+    height: 263px;
+    left: 0px;
+    /* top: 273px; */
+    
+    background: #FFFFFF;
+    border: 1px solid #E7E7E7;
+    box-shadow: 2px 4px 7px 1px rgba(0, 0, 0, 0.25);
+    
+    } 
+  .upload{
+   
+  position: absolute;
+  width: 25.82px;
+  height: 24px;
+  left: 15px;
+  top:10px;
+  
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  /*now change*/
+  }
+  .photo{
+    /* Photo | */
+  
+  position: absolute;
+  width: 51.64px;
+  height: 31px;
+  left: 40px;
+  top:10px;
+  
+  font-family: 'Inknut Antiqua';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 31px;
+  /* identical to box height */
+  
+  color: #959595;
+  
+  
+  }
+  #video{
+    left: 100px;
+  }
+  #VideoUp{
+    left: 130px;
+  }
+  #hori{
+    left: 20px;
+    right: 20px;
+    /* width: 1030px; */
+    top: 45px;
+    color: #959595;
+  }
+  #textx{
+    top: 100px;
+    left: 1px;
+    width: 230px;
+  
+    /* What’s on your mind? */
+  
+  position: absolute;
+  
+  height: 46px;
+  
+  
+  font-family: 'Inknut Antiqua';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 46px;
+  
+  color: #959595;
+  
+  
+  }
+
+  .Postingtext{
+
+    box-sizing: border-box;
+    
+    position: absolute;
+    /* width: 1080px; */
+    height: 146px;
+    left: 0px;
+    top: 45px;
+    
+    background: #FFFFFF;
+    border: 1px solid #E7E7E7;
+    border: transparent;
+  
+  
+    
+    }
+  #hori1{
+    left: 20px;
+    right: 20px;
+    /* width: 1030px; */
+    top: 190px;
+    color: #aba8a8;
+  }
+  .buttonPost{
+    /* Rectangle 35 */
+  
+  position: absolute;
+  width: 98.98px;
+  height: 39px;
+  left: 928.22px;
+  top: 205px;
+  border: transparent;
+  
+  background: linear-gradient(180deg, #D9D9D9 0%, #9C7536 0.01%, #DECD81 100%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  
+  
+  font-family: 'Inknut Antiqua';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 46px;
+  
+  color: #000000;
+  transition: background-color 0.3s ease;
+    
+  }
+  .buttonPost:hover{
+  background: linear-gradient(180deg, #DECD81 0%, #9E7336 100%);
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }

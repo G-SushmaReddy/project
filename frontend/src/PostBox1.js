@@ -6,6 +6,7 @@ import { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { selectUser } from './slices/slices';
 import Posting from './Posting';
+import Editposting from './Editposting';
 
 
 
@@ -132,19 +133,20 @@ function PostBox1({ posts }) {
     <div className="popup-content">
       <p>This is a popup window.</p>
       <button onClick={() => setShowPopup(false)}>Close</button>
-    </div>
+    </div>//revert it back to the logout
   </div>
 )} */}
  {showConfirmation && (
   
         <div className='confirmation-dialog1'>
          
-          {/* <div className='message'>Are you sure? Do you want to LogOut?</div> */}
-          {/* <div className='button-container'>
-            <button onClick={handleConfirmLogout}>Yes</button>
-            <button onClick={handleCancelLogout}>No</button>
-          </div> */}
-          <Posting />
+          <div className='message'>Are you sure? Do you want to LogOut?</div>
+          <div className='button-container'>
+            {/* <button onClick={handleConfirmLogout}>Yes</button>
+            <button onClick={handleCancelLogout}>No</button>  
+          */}  
+         <Editposting/>
+          </div>
         </div>
       )}
     </div>
