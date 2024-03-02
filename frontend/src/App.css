@@ -2088,7 +2088,7 @@ border: '1px solid black'
  width: 600px;
  height: 150px;
   transform: translate(-50%, -50%);
-  background-color: rgb(29, 28, 28);
+  background-color: rgb(29, 29, 28);
   border: 1px solid #ccc;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -2100,17 +2100,17 @@ border: '1px solid black'
 .confirmation-dialog1 {
   position: absolute;
   top:50%;
-  left: 50%;
+  left: 70%;
 
   transform: translate(-50%, -50%);
-  background-color: rgb(29, 28, 28);
+  background-color: rgb(0, 0, 0);
   border: 1px solid #ccc;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   z-index: 2;
   /* opacity: 0.6; */
   border-radius: 30px;
-  width: 400px;
+  width: 430px;
   height: 300px;
 }
 
@@ -3044,5 +3044,21 @@ input[type ="text"]
   background-color: #000000;
 
 }
+.closebutton{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  right: 20px; /* Adjusted to place the button at the right */
+  top: 10px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+.close{
+  position: absolute;
+  width: 20px;
+  left: 15px;
+  top: 10px;
 
+  
 
+}

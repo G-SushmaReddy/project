@@ -7,6 +7,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { selectUser } from './slices/slices';
 import Posting from './Posting';
 import Editposting from './Editposting';
+import image2 from './Images/close.png';
 
 
 
@@ -147,12 +148,24 @@ function PostBox1({ posts }) {
       {showConfirmation && (
 
         <div className='confirmation-dialog1'>
+           <button className='closebutton' onClick={handleCancelLogout}><img src={image2} alt='imgpost' className='close' ></img></button>
 
           <div className='message'>Edit post</div>
+          
+     
+    
+   {/* </div> */}
           <div className='button-container'>
             {/* <button onClick={handleConfirmLogout}>Yes</button>
             <button onClick={handleCancelLogout}>No</button>  
           */}
+
+
+
+
+
+
+
             <Editposting
               id={postid}
               onPost={() => {

@@ -13,6 +13,7 @@ import { useEffect } from 'react';
 function Editposting({ onPost,id }) {
   const user = useSelector(selectUser);
   const token = user.token;
+ 
 
 
   // const { id } = useParams();
@@ -138,6 +139,7 @@ function Editposting({ onPost,id }) {
       />
       <input
         type='file'
+        className='fileInput'
         accept='image/*'
         onChange={handleImageChange}
       />
@@ -150,7 +152,7 @@ function Editposting({ onPost,id }) {
 
 
       </div>
-
+    
       
 
 
