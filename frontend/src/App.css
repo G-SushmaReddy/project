@@ -3053,6 +3053,80 @@ input[type ="text"]
   cursor: pointer;
   border-radius: 20px;
 }
+
+/* App.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f7f7f7;
+}
+
+.container {
+  max-width: 9000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+  margin-top: 20px;
+}
+
+header, footer {
+  background-color: #4CAF50;
+  color: rgb(25, 36, 255);
+  padding: 10px 0;
+  text-align: center;
+}
+
+header h1, footer p {
+  margin: 0;
+}
+
+.page-title {
+  color: #333;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+.card {
+  background-color: rgb(208, 233, 226);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+}
+
+.card p {
+  font-size: 16px;
+  color: #666;
+}
+
+.footer-text {
+  font-size: 14px;
+}
+
+/* App.css */
+ol {
+  padding-left: 20px;
+  font-size: 16px;
+  color: #666;
+}
+
+ol li {
+  margin-bottom: 10px;
+}
+
+.feedback-header {
+  background-color: black; /* Set header background to black */
+  padding: 20px; /* Add some padding for the header */
+  display: flex; /* Use flexbox for alignment */
+  justify-content: center; /* Center the logo horizontally */
+  align-items: center; 
+}
+
 .close{
   position: absolute;
   width: 20px;
@@ -3062,3 +3136,32 @@ input[type ="text"]
   
 
 }
+
+/* App.css */
+header {
+  background-color: #47d84c;
+  padding: 15px 0;
+  text-align: center;
+  color: white;
+}
+
+header img.logo {
+  width: 120px;
+  height: auto;
+}
+
+header nav {
+  margin-top: 10px;
+}
+
+header nav a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+

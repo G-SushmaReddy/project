@@ -21,4 +21,4 @@ function RequestsWindow() {
   )
 }
 
-export default RequestsWindow
+export default RequestsWindow;

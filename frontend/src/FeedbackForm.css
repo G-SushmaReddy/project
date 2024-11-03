@@ -1,0 +1,67 @@
+/* FeedbackForm.css */
+
+.feedback-header {
+       background-color: black; /* Set header background to black */
+       padding: 20px; /* Add some padding for the header */
+       display: flex; /* Use flexbox for alignment */
+       justify-content: center; /* Center the logo horizontally */
+       align-items: center; 
+    }
+    
+    .logo{
+        display: flex;
+        height: 60px;
+        width: 120px;
+        position: center;
+        top: 8%;
+        left: 10%;
+       
+    }
+    .logo {
+        position: static;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+      }
+    
+    .feedback-form {
+        margin: 20px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        background-color: #f9f9f9;
+    }
+    
+    .feedback-form h2 {
+        margin-bottom: 10px;
+    }
+    
+    .feedback-form label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+        text-align: left; /* Left-align labels */
+    }
+    
+    .feedback-form input,
+    .feedback-form textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+    }
+    
+    .feedback-form button {
+        padding: 10px 20px;
+        background-color: #28a745;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    .feedback-form button:hover {
+        background-color: #218838;
+    }
+    

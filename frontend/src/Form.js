@@ -69,7 +69,7 @@ function Form() {
         });
         }
 
-    },[])
+    },[token,id]);
 
     async function form() {
         //check if the user checked the checkbox
@@ -153,7 +153,8 @@ function Form() {
 
                     </div>
                     <div className='p3x'>
-                        details to everyone click on the generate a link
+                        details click on the generate a link.Don't forget to delete your request once it is fulfilled.
+
                         <div className="horizontal-line" id='hllF' ></div>
                     </div>
 

@@ -5,6 +5,7 @@ const PostController = require('../controllers/post');
 
 const verifyToken = require('../middlewears/verifyToken');
 
+
 //router to davedetails
 router.post('/', verifyToken ,PostController.savedetails)
 //router to get

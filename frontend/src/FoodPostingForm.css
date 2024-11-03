@@ -1,0 +1,96 @@
+/* FoodPostingForm.css */
+
+.feedback-header {
+  background-color: black; /* Set header background to black */
+  padding: 20px; /* Add some padding for the header */
+  display: flex; /* Use flexbox for alignment */
+  justify-content: center; /* Center the logo horizontally */
+  align-items: center; 
+}
+
+.food-posting-container {
+  max-width: 6000px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.food-posting-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.logo{
+  display: flex;
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  top: 8%;
+  left: 10%;
+ 
+}
+
+.logo {
+  position: static;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+}
+
+.food-posting-container p {
+  text-align: center;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  color: #555;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"], select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}

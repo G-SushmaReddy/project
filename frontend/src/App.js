@@ -9,12 +9,19 @@ import NewWindow1 from "./NewWindow1";
 import MainWindow from "./MainWindow";
 import Profilesetting from "./ProfileSetting";
 import FoodRequestingForm from "./FoodRequestingForm";
+import FoodPostingForm from "./FoodPostingForm";
 import EditPost from "./EditPost";
 import RequestsWindow from "./RequestsWindow";
 import Share from "./share";
-import Mypost from "./Myposts";
 import Myposts from "./Myposts";
 import Chat from "./Chat";
+import FeedbackForm from "./FeedbackForm";
+//import NavBar from './NavBar';
+import Home from './Home';
+import About from './About';
+import HowItWorks from './HowItWorks';
+import Contact from './Contact';
+import HelpCenter from './HelpCenter';
 
 function App() {
   return (
@@ -34,9 +41,15 @@ function App() {
           element={<FoodRequestingForm />}
         ></Route>
         <Route path="/share/:id" element={<Share />}></Route>
-
+        <Route path="/FoodPostingForm" element={<FoodPostingForm/>}/>
         <Route path="/myposts" element={<Myposts />}></Route>
         <Route path="/chat" element={<Chat />}></Route>
+        <Route path="/FeedbackForm" element={<FeedbackForm />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/how-it-works" element={<HowItWorks />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/HelpCenter" element={<HelpCenter />} />
       </Routes>
     </Router>
   );
