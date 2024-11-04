@@ -8,7 +8,7 @@ function MenuBar() {
     const user = useSelector(selectUser);
 
     // Safeguard against undefined user or firstname
-    const displayName = user && user.firstname ? user.firstname.substring(0, 10) : "Sushma";
+    const displayName = user && user.firstname ? user.firstname.substring(0, 10) : "Varshini";
 
     return (
         <div className="menu">

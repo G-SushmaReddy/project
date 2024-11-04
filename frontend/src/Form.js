@@ -153,7 +153,7 @@ function Form() {
 
                     </div>
                     <div className='p3x'>
-                        details click on the generate a link.Don't forget to delete your request once it is fulfilled.
+                        details click on the generate a link.<b>Don't forget to delete your request once it is fulfilled.</b>
 
                         <div className="horizontal-line" id='hllF' ></div>
                     </div>

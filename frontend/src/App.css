@@ -1026,7 +1026,7 @@ position: absolute;
 width: 402px;
 
 left: 0px;
-top: 0x;
+top: 2%;
 
 background: #EEEEF0;
 box-shadow: inset 7px 6px 4px rgba(0, 0, 0, 0.13);
@@ -1134,6 +1134,7 @@ position: absolute;
 width: 718px;
 height: 56px;
 left: 5%;
+right:5%;
 top: 18%;
 font-size: 22px;
 
@@ -1233,9 +1234,9 @@ color: #9E9AA3;
     /* Rectangle 23 */
 
 position: absolute;
-width: 804px;
+width: 1000px;
 height: 1000px;
-left: 330px;
+left: 200px;
 top: 183px;
 align-content: center;
 
@@ -2175,7 +2176,9 @@ background: #D9D9D9;
 
   }
   .label1{
-    /* First Name: */
+    /* 
+    
+  Name: */
 
 position: absolute;
 width: 163px;
@@ -3164,4 +3167,6 @@ header nav a {
 header nav a:hover {
   text-decoration: underline;
 }
+
+/* Example CSS for layout adjustment */
 

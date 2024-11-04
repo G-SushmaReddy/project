@@ -49,7 +49,8 @@ const FoodPostingForm = ({ addPost }) => { // Accept addPost as a prop
                 <img src={logo} alt="Donato Logo" className="logo" />
             </div> 
             <h2>Food Posting Form</h2>
-            <p>Hi! Welcome to the Food Posting Form. This form helps you to provide details on food posting. Please fill out the form with accurate information. Thank you for your contribution!And don't forget to delete your post once your food is picked.</p>
+            <p>Hi! Welcome to the Food Posting Form. This form helps you to provide details on food posting. Please fill out the form with accurate information. Thank you for your contribution!</p>
+            <p><b>Don't forget to delete your post once your food is picked.</b></p>
             <form onSubmit={handleSubmit}>
                 <div className="form-group">
                     <label htmlFor="name">Name</label>
